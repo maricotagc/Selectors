@@ -15,9 +15,9 @@
     * Dev Tools Console: document.querySelector(".class-a.class-b");
     * Selenium: TBC
     
-3. Create a query selector to get the BLUE block content
-    * Attribute used: position="3"
-    * Dev Tools Console: document.querySelector("div[position='3']");
+3. Create a query selector to get the first BLUE block content
+    * Attribute used: position="3" and not having level attribute
+    * Dev Tools Console: document.querySelector("div[position='3']:not([level='5']");
     * Selenium: TBC
     
 4. Create a query selector to get the GREEN block content
