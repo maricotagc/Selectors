@@ -39,3 +39,12 @@
     * Attribute used: id
     * Dev Tools Console: document.querySelector("#screen").value;
     * Selenium: TBC
+
+## Wildcards
+[id^='someId'] will match all ids starting with someId.
+
+
+[id$='someId'] will match all ids ending with someId.
+
+
+[id*='someId'] will match all ids containing someId.
