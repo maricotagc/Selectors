@@ -17,25 +17,25 @@
     
 3. Create a query selector to get the BLUE block content
     * Attribute used: position="3"
-    * Dev Tools Console: 
+    * Dev Tools Console: document.querySelector("div[position='3']");
     * Selenium: TBC
     
 4. Create a query selector to get the GREEN block content
-    * Attribute used: 
-    * Dev Tools Console: 
+    * Attribute used: span
+    * Dev Tools Console: document.querySelector("span");
     * Selenium: TBC
     
 5. Create a query selector to get the GRAY blockS content
-    * Attribute used: 
-    * Dev Tools Console: 
+    * Attribute used: style + div
+    * Dev Tools Console: document.querySelectorAll("div[style='height:50px;background:green'] > div");
     * Selenium: TBC
     
 6. Create a query selector to click on the button
-    * Attribute used: 
-    * Dev Tools Console: 
+    * Attribute used: button
+    * Dev Tools Console: document.querySelector("button").click();
     * Selenium: TBC
     
 7. Create a query selector to read the textarea context that will show up after clicking the button
-    * Attribute used: 
-    * Dev Tools Console: 
+    * Attribute used: id
+    * Dev Tools Console: document.querySelector("#screen").value;
     * Selenium: TBC
