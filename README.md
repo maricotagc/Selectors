@@ -21,13 +21,13 @@
     * Selenium: TBC
     
 4. Create a query selector to get the GREEN block content
-    * Attribute used: span
-    * Dev Tools Console: document.querySelector("span");
+    * Attribute used: div and span
+    * Dev Tools Console: document.querySelectorAll("div > span");
     * Selenium: TBC
     
-5. Create a query selector to get the GRAY blockS content
-    * Attribute used: style + div
-    * Dev Tools Console: document.querySelectorAll("div[style='height:50px;background:green'] > div");
+5. Create a query selector to get the GRAY blocks content
+    * Attribute used: wildcard ^ (starts with)
+    * Dev Tools Console: document.querySelectorAll("[class^='class-special']");
     * Selenium: TBC
     
 6. Create a query selector to click on the button
