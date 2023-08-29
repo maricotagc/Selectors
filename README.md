@@ -51,3 +51,10 @@
 
 # Page for practice 2
 https://raphael.moita.gitlab.io/query-selectors/selenium/
+
+## WebElements
+
+1. Dropdown
+2. Checkbox
+3. TextInput
+4. TextArea
