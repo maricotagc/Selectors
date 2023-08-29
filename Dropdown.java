@@ -24,6 +24,9 @@ public class Examples extends Base
 
     @Test
     public void DropdownSelectionTest(){
+        //Given
+        String expectedDisplayedInput = "Gender: female";
+
         //Find the dropdown element
         WebElement dropdown = driver.findElement(By.id("gender"));
 
@@ -34,7 +37,12 @@ public class Examples extends Base
         // Find the selected option
         WebElement selectedOption = dropdown.findElement(By.cssSelector("option[value='female']"));
 
+        //Click on Submit button
+        driver.findElement(By.cssSelector("input[type='button'][value='Display Input'][onclick='displayInput()']")).click();
+        String actualDisplayedInput = driver.findElement(By.id("display-gender")).getText();
+
         // Verify that the selected option is indeed selected
         Assertions.assertTrue(selectedOption.isSelected(), "Female should be selected");
+        Assertions.assertEquals(expectedDisplayedInput, actualDisplayedInput);
     }
 }
