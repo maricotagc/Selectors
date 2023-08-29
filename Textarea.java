@@ -26,6 +26,8 @@ public class Dropdown extends Base
     public void testTextareaContentAssertion() {
         //Given
         String expectedResult = "I am the most beautiful baby in the world";
+        //Given
+        String expectedDisplayedInput = "Comments: I am the most beautiful baby in the world";
 
         //When
         // Find the textarea element
@@ -38,7 +40,12 @@ public class Dropdown extends Base
         // Get the current content of the textarea
         String actualContent = textarea.getAttribute("value");
 
+        //Click on Submit button
+        driver.findElement(By.cssSelector("input[type='button'][value='Display Input'][onclick='displayInput()']")).click();
+        String actualDisplayedInput = driver.findElement(By.id("display-comments")).getText();
+
         // Verify that the content matches the expected input
         Assertions.assertEquals(expectedResult, actualContent);
+        Assertions.assertEquals(expectedDisplayedInput, actualDisplayedInput);
     }
 }
