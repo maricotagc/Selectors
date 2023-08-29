@@ -48,3 +48,6 @@
 
 
 [id*='someId'] will match all ids containing someId.
+
+# Page for practice 2
+https://raphael.moita.gitlab.io/query-selectors/selenium/
