@@ -22,7 +22,7 @@ public class Dropdown extends Base
         driver.findElement(By.cssSelector("#proceed-link")).click();
     }
 
-    @Test
+      @Test
     public void testTextareaContentAssertion() {
         //Given
         String expectedResult = "I am the most beautiful baby in the world";
