@@ -22,7 +22,7 @@ public class Dropdown extends Base
         driver.findElement(By.cssSelector("#proceed-link")).click();
     }
 
-    @Test
+   @Test
     public void TextInputTest() {
         //Given
         String expectedValue = "Izabela Moita";
