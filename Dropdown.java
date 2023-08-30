@@ -22,7 +22,7 @@ public class Examples extends Base
         driver.findElement(By.cssSelector("#proceed-link")).click();
     }
 
-    @Test
+   @Test
     public void DropdownSelectionTest(){
         //Given
         String expectedDisplayedInput = "Gender: female";
