@@ -54,7 +54,7 @@ https://raphael.moita.gitlab.io/query-selectors/selenium/
 
 ## WebElements
 
-1. Dropdown
-2. Checkbox
-3. TextInput
-4. TextArea
+1. Dropdown: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/Dropdown.java)
+2. Checkbox: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/Checkbox.java)
+3. TextInput: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/TextInput.java)
+4. TextArea: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/Textarea.java)
