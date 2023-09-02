@@ -59,3 +59,4 @@ https://raphael.moita.gitlab.io/query-selectors/selenium/
 3. TextInput: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/TextInput.java)
 4. TextArea: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/Textarea.java)
 5. IFrame: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/Iframe.java)
+6. Radio Button: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/RadioButton.java)
