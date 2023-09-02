@@ -8,15 +8,7 @@ public class TechlisticTest
         WebDriverFactory webDriverFactory = new WebDriverFactory();
         driver = webDriverFactory.createChromeDriver();
         seleniumUtil = new SeleniumUtil(driver);
-    }
 
-    @Test
-    public void iFrameTest() {
-        //Given
-        String expectedFirstName = "Chun-Li";
-        String expectedLastName = "Moita";
-
-        //When
         seleniumUtil.openPage("https://www.techlistic.com/p/selenium-practice-form.html");
         seleniumUtil.clickButtonByCss("#ez-accept-all");
         WebDriver frame1Driver = seleniumUtil.changeIframeById("google_ads_iframe_/1254144,22662382379/techlistic_com-pixel1_0");
@@ -31,10 +23,25 @@ public class TechlisticTest
             }
         }
         driver.switchTo().parentFrame();
-        seleniumUtil.clickButtonById("#ezmob-footer-close");
-        seleniumUtil.clickButtonById("#cookieChoiceDismiss");
+        seleniumUtil.clickButtonById("ezmob-footer-close");
+        seleniumUtil.clickButtonById("cookieChoiceDismiss");
+    }
+
+    @AfterEach
+    public void tearDown() {
+        driver.quit();
+    }
+
+    @Test
+    public void IframeTest() {
+        //Given
+        String expectedFirstName = "Chun-Li";
+        String expectedLastName = "Moita";
+
+        //When
         seleniumUtil.writeInputTextByCss("Chun-Li","[name='firstname']");
         seleniumUtil.writeInputTextByCss("Moita", "[name='lastname']");
+        seleniumUtil.writeInputTextById("20/03/2023", "datepicker");
 
         String actualFirstName = seleniumUtil.readInputTextValueByCss("[name='firstname']");
         String actualLastName = seleniumUtil.readInputTextValueByCss("[name='lastname']");
@@ -43,4 +50,5 @@ public class TechlisticTest
         Assertions.assertEquals(expectedFirstName, actualFirstName);
         Assertions.assertEquals(expectedLastName, actualLastName);
     }
+
 }
