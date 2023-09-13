@@ -63,3 +63,7 @@ https://raphael.moita.gitlab.io/query-selectors/selenium/
 7. Select Box: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/SelectBox.java)
 8. Multi Select Box: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/MultiSelectBox.java)
 9. Upload Image: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/UploadFile.java)
+
+## Approach for same selector containing many elemetns
+
+Example: 
