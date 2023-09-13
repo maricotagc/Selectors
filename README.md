@@ -67,3 +67,6 @@ https://raphael.moita.gitlab.io/query-selectors/selenium/
 ## Approach for same selector containing many elemetns
 
 Example: 
+<picture>
+
+<picture>
