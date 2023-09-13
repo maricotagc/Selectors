@@ -64,9 +64,15 @@ https://raphael.moita.gitlab.io/query-selectors/selenium/
 8. Multi Select Box: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/MultiSelectBox.java)
 9. Upload Image: [Code Example](/https://github.com/maricotagc/Selectors/blob/main/UploadFile.java)
 
-## Approach for same selector containing many elemetns
+## Approach for same selector containing many elements
 
 Example: 
-<picture>
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/maricotagc/Selectors/blob/main/Images/selector_many_elements.jpg">
+  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://github.com/maricotagc/Selectors/blob/main/Images/selector_many_elements.jpg">
+</picture>
+
+Solution: 
+1. To get element above and assign it to a variable.
+2. From this variable create a 
