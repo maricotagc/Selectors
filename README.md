@@ -74,5 +74,5 @@ Example:
 </picture>
 
 Solution: 
-1. To get element above and assign it to a variable.
-2. From this variable create a 
+1. In selenium, get main element above the one you are targeting and assign it to a Webelement variable.
+2. This variable will be treated as the new DOM. From this variable find the element you target.
